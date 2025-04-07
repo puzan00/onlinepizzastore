@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>PizzaDelight - Delicious Pizzas Delivered to Your Door</title>
+</head>
+<body class="bg-gray-50">
+    <!-- Header will be included via JavaScript -->
+    <div id="header-container"></div>
+    
+    <!-- Promo Banner will be included via JavaScript -->
+    <div id="promo-banner-container"></div>
+    
+    <!-- Hero Section -->
+    <section class="relative bg-red-700 text-white">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80')"></div>
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container mx-auto px-4 py-24 md:py-32 relative z-10 flex flex-col items-center text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Delicious Pizza, <span class="text-yellow-400">Delivered Fast</span></h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl">Handcrafted with fresh ingredients and baked to perfection. Experience the taste of authentic Italian pizza.</p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="menu.html" class="bg-yellow-400 text-red-900 px-8 py-3 rounded-full font-bold text-lg hover:bg-yellow-500 transition">
+                    View Menu
+                </a>
+                <a href="ordernow.html" class="bg-white text-red-900 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition">
+                    Order Now
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Categories -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-red-700">Menu</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our wide range of delicious options, from classic favorites to gourmet specialties.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Category 1 -->
+                <div class="bg-gray-100 rounded-lg p-6 text-center hover:shadow-lg transition cursor-pointer">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-pizza-slice text-red-700 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Pizzas</h3>
+                    <p class="text-gray-600 text-sm">Classic & Specialty</p>
+                </div>
+                
+                <!-- Category 2 -->
+                <div class="bg-gray-100 rounded-lg p-6 text-center hover:shadow-lg transition cursor-pointer">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-drumstick-bite text-red-700 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sides</h3>
+                    <p class="text-gray-600 text-sm">Wings & More</p>
+                </div>
+                
+                <!-- Category 3 -->
+                <div class="bg-gray-100 rounded-lg p-6 text-center hover:shadow-lg transition cursor-pointer">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-glass-cheers text-red-700 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Drinks</h3>
+                    <p class="text-gray-600 text-sm">Sodas & Beverages</p>
+                </div>
+                
+                <!-- Category 4 -->
+                <div class="bg-gray-100 rounded-lg p-6 text-center hover:shadow-lg transition cursor-pointer">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-ice-cream text-red-700 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Desserts</h3>
+                    <p class="text-gray-600 text-sm">Sweet Treats</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Popular Pizzas -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Most <span class="text-red-700">Popular</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our customers' favorites that keep them coming back for more.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pizza 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')">
+                        <span class="absolute top-4 right-4 bg-red-700 text-white text-sm font-bold px-3 py-1 rounded-full">Bestseller</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">Pepperoni Supreme</h3>
+                            <span class="text-red-700 font-bold">$14.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Double pepperoni, extra cheese, and our secret spice blend on a hand-tossed crust.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                                <span class="text-gray-600 text-sm ml-2">(128)</span>
+                            </div>
+                            <button class="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1604917877934-07d8d248d396?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')">
+                        <span class="absolute top-4 right-4 bg-green-600 text-white text-sm font-bold px-3 py-1 rounded-full">Vegetarian</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">Veggie Delight</h3>
+                            <span class="text-red-700 font-bold">$13.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Bell peppers, mushrooms, onions, black olives, and tomatoes on a thin crust.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="far fa-star text-yellow-400"></i>
+                                <span class="text-gray-600 text-sm ml-2">(96)</span>
+                            </div>
+                            <button class="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')">
+                        <span class="absolute top-4 right-4 bg-yellow-500 text-white text-sm font-bold px-3 py-1 rounded-full">New</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">BBQ Chicken</h3>
+                            <span class="text-red-700 font-bold">$15.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Grilled chicken, bacon, red onions, and our signature BBQ sauce on a hand-tossed crust.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-gray-600 text-sm ml-2">(64)</span>
+                            </div>
+                            <button class="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Special Offers -->
+    <section class="py-16 bg-red-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Special <span class="text-yellow-400">Offers</span></h2>
+                <p class="text-gray-200 max-w-2xl mx-auto">Limited-time deals you don't want to miss!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Offer 1 -->
+                <div class="bg-red-800 rounded-lg p-6 flex flex-col md:flex-row items-center">
+                    <div class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
+                        <div class="bg-red-900 rounded-full w-32 h-32 flex items-center justify-center mx-auto">
+                            <span class="text-yellow-400 font-bold text-4xl">30%</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 text-center md:text-left">
+                        <h3 class="text-xl font-bold mb-2">Family Feast Deal</h3>
+                        <p class="text-gray-200 mb-4">Get 30% off when you order 2 large pizzas, 1 side, and 2 drinks.</p>
+                        <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-2 sm:space-y-0 sm:space-x-4">
+                            <span class="bg-yellow-400 text-red-900 px-3 py-1 rounded-full text-sm font-bold">Use code: FAMILY30</span>
+                            <a href="ordernow.html" class="bg-white text-red-900 px-4 py-1 rounded-full text-sm font-bold hover:bg-gray-100 transition">
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Offer 2 -->
+                <div class="bg-red-800 rounded-lg p-6 flex flex-col md:flex-row items-center">
+                    <div class="w-full md:w-1/3 mb-4 md:mb-0 md:mr-6">
+                        <div class="bg-red-900 rounded-full w-32 h-32 flex items-center justify-center mx-auto">
+                            <span class="text-yellow-400 font-bold text-4xl">FREE</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 text-center md:text-left">
+                        <h3 class="text-xl font-bold mb-2">Buy 1 Get 1 Free</h3>
+                        <p class="text-gray-200 mb-4">Buy any large pizza at regular price and get a medium pizza free.</p>
+                        <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-2 sm:space-y-0 sm:space-x-4">
+                            <span class="bg-yellow-400 text-red-900 px-3 py-1 rounded-full text-sm font-bold">Use code: PIZZALOVE</span>
+                            <a href="ordernow.html" class="bg-white text-red-900 px-4 py-1 rounded-full text-sm font-bold hover:bg-gray-100 transition">
+                                Order Now
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">How It <span class="text-red-700">Works</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Ordering your favorite pizza is quick and easy with PizzaDelight.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mouse-pointer text-red-700 text-3xl"></i>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-2">1. Choose Your Pizza</h3>
+                        <p class="text-gray-600">Browse our menu and select your favorite pizzas, sides, and drinks.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-pizza-slice text-red-700 text-3xl"></i>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-2">2. Customize & Order</h3>
+                        <p class="text-gray-600">Customize your pizza with your favorite toppings and place your order.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shipping-fast text-red-700 text-3xl"></i>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg p-6">
+                        <h3 class="text-xl font-bold mb-2">3. Delivery or Pickup</h3>
+                        <p class="text-gray-600">We'll deliver your order hot and fresh, or have it ready for pickup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our <span class="text-red-700">Customers Say</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it. Here's what our happy customers have to say.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-cover bg-center rounded-full mr-4" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80')"></div>
+                        <div>
+                            <h4 class="font-bold">John Smith</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The best pizza I've ever had! The crust is perfect and the toppings are always fresh. Delivery is always on time too!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-cover bg-center rounded-full mr-4" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80')"></div>
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Their vegetarian options are amazing! I love the Veggie Delight pizza and their customer service is always friendly."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-cover bg-center rounded-full mr-4" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80')"></div>
+                        <div>
+                            <h4 class="font-bold">Mike Thompson</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The family deal is a great value! We order every Friday night and the kids love it. The BBQ Chicken pizza is our favorite!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    
+    <!-- Contact & Location -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Find <span class="text-red-700">Us</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Visit us in-store or contact us with any questions.</p>
+            </div>
+            
+                
+                <!-- Contact Form -->
+                <div class="bg-gray-100 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"></textarea>
+                        </div>
+                        <button type="submit" class="bg-red-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-800 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer will be included via JavaScript -->
+    <div id="footer-container"></div>
+    
+    <!-- JavaScript to include partials -->
+    <script src="../js/include.js"></script>
+    <script>
+        // Load partials
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load header
+            fetch('../partials/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                });
+            
+            // Load promo banner
+            fetch('../partials/promo-banner.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('promo-banner-container').innerHTML = data;
+                });
+            
+            // Load footer
+            fetch('../partials/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>

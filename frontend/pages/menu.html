@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Menu - PizzaDelight</title>
+</head>
+<body class="bg-gray-50">
+    <!-- Header will be included via JavaScript -->
+    <div id="header-container"></div>
+    
+    <!-- Menu Hero Section -->
+    <section class="bg-red-700 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our <span class="text-yellow-400">Menu</span></h1>
+            <p class="text-xl max-w-2xl mx-auto">Explore our wide range of delicious pizzas and sides, made with the freshest ingredients.</p>
+        </div>
+    </section>
+    
+    <!-- Menu Categories Navigation -->
+    <section class="sticky top-0 bg-white shadow-md z-10">
+        <div class="container mx-auto px-4">
+            <div class="flex overflow-x-auto py-4 space-x-6 no-scrollbar">
+                <a href="#pizzas" class="whitespace-nowrap px-4 py-2 bg-red-700 text-white rounded-full font-medium hover:bg-red-800 transition">Pizzas</a>
+                <a href="#sides" class="whitespace-nowrap px-4 py-2 bg-gray-200 text-gray-800 rounded-full font-medium hover:bg-gray-300 transition">Sides</a>
+                <a href="#salads" class="whitespace-nowrap px-4 py-2 bg-gray-200 text-gray-800 rounded-full font-medium hover:bg-gray-300 transition">Salads</a>
+                <a href="#drinks" class="whitespace-nowrap px-4 py-2 bg-gray-200 text-gray-800 rounded-full font-medium hover:bg-gray-300 transition">Drinks</a>
+                <a href="#desserts" class="whitespace-nowrap px-4 py-2 bg-gray-200 text-gray-800 rounded-full font-medium hover:bg-gray-300 transition">Desserts</a>
+                <a href="#deals" class="whitespace-nowrap px-4 py-2 bg-gray-200 text-gray-800 rounded-full font-medium hover:bg-gray-300 transition">Special Deals</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pizzas Section -->
+    <section id="pizzas" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <i class="fas fa-pizza-slice text-red-700 mr-3"></i>
+                <span>Pizzas</span>
+            </h2>
+            
+            <!-- Pizza Categories -->
+            <div class="mb-8">
+                <div class="flex overflow-x-auto space-x-4 pb-4 no-scrollbar">
+                    <button class="px-4 py-2 bg-red-700 text-white rounded-lg font-medium whitespace-nowrap">All Pizzas</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg font-medium whitespace-nowrap">Classic</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg font-medium whitespace-nowrap">Specialty</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg font-medium whitespace-nowrap">Vegetarian</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg font-medium whitespace-nowrap">Meat Lovers</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg font-medium whitespace-nowrap">Create Your Own</button>
+                </div>
+            </div>
+            
+            <!-- Pizza Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Pizza 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')">
+                        <span class="absolute top-4 right-4 bg-red-700 text-white text-sm font-bold px-3 py-1 rounded-full">Bestseller</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Pepperoni Supreme</h3>
+                            <span class="text-red-700 font-bold">$14.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Double pepperoni, extra cheese, and our secret spice blend on a hand-tossed crust.</p>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            <span class="text-gray-600 text-sm ml-2">(128)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <label for="size1" class="text-sm font-medium text-gray-700">Size:</label>
+                                <select id="size1" class="ml-2 text-sm border-gray-300 rounded">
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                    <option>X-Large</option>
+                                </select>
+                            </div>
+                            <button class="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1604917877934-07d8d248d396?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')">
+                        <span class="absolute top-4 right-4 bg-green-600 text-white text-sm font-bold px-3 py-1 rounded-full">Vegetarian</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Veggie Delight</h3>
+                            <span class="text-red-700 font-bold">$13.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Bell peppers, mushrooms, onions, black olives, and tomatoes on a thin crust.</p>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="far fa-star text-yellow-400"></i>
+                            <span class="text-gray-600 text-sm ml-2">(96)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <label for="size2" class="text-sm font-medium text-gray-700">Size:</label>
+                                <select id="size2" class="ml-2 text-sm border-gray-300 rounded">
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                    <option>X-Large</option>
+                                </select>
+                            </div>
+                            <button class="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')">
+                        <span class="absolute top-4 right-4 bg-yellow-500 text-white text-sm font-bold px-3 py-1 rounded-full">New</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">BBQ Chicken</h3>
+                            <span class="text-red-700 font-bold">$15.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Grilled chicken, bacon, red onions, and our signature BBQ sauce on a hand-tossed crust.</p>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="text-gray-600 text-sm ml-2">(64)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <label for="size3" class="text-sm font-medium text-gray-700">Size:</label>
+                                <select id="size3" class="ml-2 text-sm border-gray-300 rounded">
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                    <option>X-Large</option>
+                                </select>
+                            </div>
+                            <button class="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Meat Lovers</h3>
+                            <span class="text-red-700 font-bold">$16.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Pepperoni, sausage, bacon, ham, and ground beef on a hand-tossed crust.</p>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            <span class="text-gray-600 text-sm ml-2">(112)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <label for="size4" class="text-sm font-medium text-gray-700">Size:</label>
+                                <select id="size4" class="ml-2 text-sm border-gray-300 rounded">
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                    <option>X-Large</option>
+                                </select>
+                            </div>
+                            <button class="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Hawaiian</h3>
+                            <span class="text-red-700 font-bold">$14.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Ham, pineapple, and extra cheese on a hand-tossed crust.</p>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="far fa-star text-yellow-400"></i>
+                            <span class="text-gray-600 text-sm ml-2">(86)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <label for="size5" class="text-sm font-medium text-gray-700">Size:</label>
+                                <select id="size5" class="ml-2 text-sm border-gray-300 rounded">
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                    <option>X-Large</option>
+                                </select>
+                            </div>
+                            <button class="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Margherita</h3>
+                            <span class="text-red-700 font-bold">$12.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Fresh mozzarella, tomatoes, and basil on a thin crust with olive oil drizzle.</p>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="text-gray-600 text-sm ml-2">(94)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <label for="size6" class="text-sm font-medium text-gray-700">Size:</label>
+                                <select id="size6" class="ml-2 text-sm border-gray-300 rounded">
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                    <option>X-Large</option>
+                                </select>
+                            </div>
+                            <button class="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-8">
+                <button class="bg-gray-200 text-gray-800 px-6 py-3 rounded-full font-bold hover:bg-gray-300 transition">
+                    Load More Pizzas
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sides Section -->
+    <section id="sides" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <i class="fas fa-drumstick-bite text-red-700 mr-3"></i>
+                <span>Sides</span>
+            </h2>
+            
+            <!-- Sides Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Side 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600628421055-4d30de868b8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Garlic Breadsticks</h3>
+                            <span class="text-red-700 font-bold">$5.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Freshly baked breadsticks topped with garlic butter and parmesan.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Side 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1608039755401-742074f0548d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Buffalo Wings</h3>
+                            <span class="text-red-700 font-bold">$8.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Crispy chicken wings tossed in spicy buffalo sauce. Served with ranch.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Side 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1548340748-6d2b7d7da280?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Cheese Sticks</h3>
+                            <span class="text-red-700 font-bold">$6.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Mozzarella cheese sticks breaded and fried to perfection. Served with marinara.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Salads Section -->
+    <section id="salads" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <i class="fas fa-leaf text-red-700 mr-3"></i>
+                <span>Fresh Salads</span>
+            </h2>
+            
+            <!-- Salads Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Salad 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Garden Salad</h3>
+                            <span class="text-red-700 font-bold">$7.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Fresh mixed greens, tomatoes, cucumbers, red onions, and croutons with your choice of dressing.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Salad 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Caesar Salad</h3>
+                            <span class="text-red-700 font-bold">$8.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Crisp romaine lettuce, parmesan cheese, croutons, and our homemade Caesar dressing.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Salad 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1607532941433-304659e8198a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Greek Salad</h3>
+                            <span class="text-red-700 font-bold">$9.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Mixed greens, feta cheese, kalamata olives, tomatoes, cucumbers, and red onions with Greek dressing.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Drinks Section -->
+    <section id="drinks" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <i class="fas fa-glass-cheers text-red-700 mr-3"></i>
+                <span>Drinks</span>
+            </h2>
+            
+            <!-- Drinks Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Drink 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Soda</h3>
+                            <span class="text-red-700 font-bold">$2.49</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Your choice of cola, lemon-lime, root beer, or orange soda.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Drink 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Iced Tea</h3>
+                            <span class="text-red-700 font-bold">$2.49</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Freshly brewed iced tea, sweetened or unsweetened.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Drink 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1596803244618-8dea4ebff6c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Lemonade</h3>
+                            <span class="text-red-700 font-bold">$2.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Freshly squeezed lemonade made with real lemons.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Drink 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Bottled Water</h3>
+                            <span class="text-red-700 font-bold">$1.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Purified bottled water, still or sparkling.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Desserts Section -->
+    <section id="desserts" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <i class="fas fa-ice-cream text-red-700 mr-3"></i>
+                <span>Desserts</span>
+            </h2>
+            
+            <!-- Desserts Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dessert 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Chocolate Lava Cake</h3>
+                            <span class="text-red-700 font-bold">$6.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Warm chocolate cake with a molten chocolate center, served with vanilla ice cream.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Dessert 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Cinnamon Sticks</h3>
+                            <span class="text-red-700 font-bold">$5.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Freshly baked breadsticks topped with cinnamon sugar, served with sweet icing dip.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Dessert 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">New York Cheesecake</h3>
+                            <span class="text-red-700 font-bold">$6.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Creamy New York style cheesecake with your choice of strawberry or chocolate topping.</p>
+                        <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Create Your Own Pizza Section -->
+    <section class="py-12 bg-red-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Create Your <span class="text-yellow-400">Own Pizza</span></h2>
+                <p class="text-xl max-w-2xl mx-auto">Customize your perfect pizza with your favorite toppings.</p>
+            </div>
+            
+            <div class="bg-white text-gray-800 rounded-lg p-6 md:p-8 max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Left Column - Options -->
+                    <div>
+                        <!-- Size Selection -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold mb-3">1. Choose Your Size</h3>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="size" class="mr-2" checked>
+                                    <span>Medium (12") - $10.99</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="size" class="mr-2">
+                                    <span>Large (14") - $12.99</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="size" class="mr-2">
+                                    <span>X-Large (16") - $14.99</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Crust Selection -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold mb-3">2. Choose Your Crust</h3>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="crust" class="mr-2" checked>
+                                    <span>Hand Tossed</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="crust" class="mr-2">
+                                    <span>Thin Crust</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="crust" class="mr-2">
+                                    <span>Stuffed Crust (+$2.00)</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="crust" class="mr-2">
+                                    <span>Gluten-Free (+$3.00)</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Sauce Selection -->
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold mb-3">3. Choose Your Sauce</h3>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="sauce" class="mr-2" checked>
+                                    <span>Classic Marinara</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="sauce" class="mr-2">
+                                    <span>BBQ Sauce</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="sauce" class="mr-2">
+                                    <span>Garlic Parmesan</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="sauce" class="mr-2">
+                                    <span>Buffalo Sauce</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column - Toppings -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-3">4. Choose Your Toppings</h3>
+                        <p class="text-sm text-gray-600 mb-3">First 3 toppings included, additional toppings +$1.50 each</p>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold mb-2">Meats</h4>
+                            <div class="grid grid-cols-2 gap-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Pepperoni</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Sausage</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Bacon</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Ham</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Chicken</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Ground Beef</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold mb-2">Veggies</h4>
+                            <div class="grid grid-cols-2 gap-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Mushrooms</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Onions</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Bell Peppers</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Black Olives</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Tomatoes</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Jalapeños</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Pineapple</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Spinach</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <h4 class="font-bold mb-2">Special Instructions</h4>
+                            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="2" placeholder="Any special requests?"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Price and Add to Cart -->
+                <div class="mt-8 flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <span class="text-lg">Total: </span>
+                        <span class="text-2xl font-bold text-red-700">$14.99</span>
+                    </div>
+                    <button class="bg-red-700 text-white px-8 py-3 rounded-full font-bold hover:bg-red-800 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Special Deals Section -->
+    <section id="deals" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <i class="fas fa-tags text-red-700 mr-3"></i>
+                <span>Special Deals</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Deal 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/5 h-48 md:h-auto bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1594007654729-407eedc4fe24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                        <div class="md:w-3/5 p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold">Family Feast</h3>
+                                <span class="text-red-700 font-bold">$34.99</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">2 large pizzas, 1 order of wings, 1 order of breadsticks, and 2 liter soda.</p>
+                            <p class="text-green-600 font-medium mb-4">Save $8.50</p>
+                            <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deal 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/5 h-48 md:h-auto bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1571066811602-716837d681de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                        <div class="md:w-3/5 p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold">Date Night Special</h3>
+                                <span class="text-red-700 font-bold">$24.99</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">1 medium specialty pizza, 1 order of breadsticks, 2 desserts, and 2 drinks.</p>
+                            <p class="text-green-600 font-medium mb-4">Save $6.00</p>
+                            <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deal 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/5 h-48 md:h-auto bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                        <div class="md:w-3/5 p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold">Lunch Special</h3>
+                                <span class="text-red-700 font-bold">$9.99</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">1 personal pizza with 2 toppings, 1 side salad, and 1 drink. Available 11am-3pm.</p>
+                            <p class="text-green-600 font-medium mb-4">Save $4.00</p>
+                            <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deal 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/5 h-48 md:h-auto bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                        <div class="md:w-3/5 p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold">Game Day Bundle</h3>
+                                <span class="text-red-700 font-bold">$39.99</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">2 large pizzas, 2 orders of wings, 1 order of breadsticks, and a 2 liter soda.</p>
+                            <p class="text-green-600 font-medium mb-4">Save $10.00</p>
+                            <button class="w-full bg-red-700 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-800 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer will be included via JavaScript -->
+    <div id="footer-container"></div>
+    
+    <!-- JavaScript to include partials -->
+    <script src="../js/include.js"></script>
+    <script>
+        // Load partials
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load header
+            fetch('../partials/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                });
+            
+            // Load footer
+            fetch('../partials/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>

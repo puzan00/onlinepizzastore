@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact Us - PizzaDelight</title>
+</head>
+<body class="bg-gray-50">
+    <!-- Header will be included via JavaScript -->
+    <div id="header-container"></div>
+    
+    <!-- Contact Hero Section -->
+    <section class="bg-red-700 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact <span class="text-yellow-400">Us</span></h1>
+            <p class="text-xl max-w-2xl mx-auto">We'd love to hear from you! Reach out with any questions, feedback, or concerns.</p>
+        </div>
+    </section>
+    
+    <!-- Contact Information Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Location -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-red-100 text-red-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Our Locations</h3>
+                    <p class="text-gray-600 mb-4">Visit us at one of our stores</p>
+                    <div class="space-y-2">
+                        <p class="font-medium">Main Street Location</p>
+                        <p class="text-gray-600">123 Main Street, Foodville, NY 10001</p>
+                        <p class="font-medium mt-4">Downtown Location</p>
+                        <p class="text-gray-600">456 Park Avenue, Foodville, NY 10002</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-red-100 text-red-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Contact Info</h3>
+                    <p class="text-gray-600 mb-4">Reach out to us directly</p>
+                    <div class="space-y-2">
+                        <p class="font-medium">Phone</p>
+                        <p class="text-gray-600">(123) 456-7890</p>
+                        <p class="font-medium mt-4">Email</p>
+                        <p class="text-gray-600">info@pizzadelight.com</p>
+                    </div>
+                </div>
+                
+                <!-- Hours -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-red-100 text-red-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Opening Hours</h3>
+                    <p class="text-gray-600 mb-4">We're open 7 days a week</p>
+                    <div class="space-y-2">
+                        <p class="font-medium">Monday - Thursday</p>
+                        <p class="text-gray-600">11:00 AM - 10:00 PM</p>
+                        <p class="font-medium mt-4">Friday - Sunday</p>
+                        <p class="text-gray-600">11:00 AM - 11:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form and Map -->
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Contact Form -->
+                <div class="w-full lg:w-1/2">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+                        
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700" placeholder="Enter your name">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700" placeholder="Enter your email">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700" placeholder="Enter your phone number">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700">
+                                    <option value="">Select a subject</option>
+                                    <option value="order">Order Inquiry</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="complaint">Complaint</option>
+                                    <option value="catering">Catering</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700" placeholder="Enter your message"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-red-700 text-white py-3 px-4 rounded-lg font-bold hover:bg-red-800 transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Map -->
+                <div class="w-full lg:w-1/2">
+                    <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                        <h2 class="text-2xl font-bold mb-6">Find Us</h2>
+                        
+                        <!-- Map placeholder - In a real implementation, you would embed a Google Map or similar -->
+                        <div class="w-full h-96 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-map-marked-alt text-4xl text-gray-400 mb-4"></i>
+                                <p class="text-gray-600">Interactive map would be embedded here</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Location tabs -->
+                        <div class="mt-6">
+                            <div class="flex border-b">
+                                <button class="px-4 py-2 border-b-2 border-red-700 text-red-700 font-medium">Main Street</button>
+                                <button class="px-4 py-2 border-b-2 border-transparent hover:text-red-700 transition">Downtown</button>
+                            </div>
+                            
+                            <div class="py-4">
+                                <h3 class="font-bold mb-2">Main Street Location</h3>
+                                <p class="text-gray-600 mb-2">123 Main Street, Foodville, NY 10001</p>
+                                <p class="text-gray-600 mb-4">(123) 456-7890</p>
+                                <a href="#" class="text-red-700 hover:text-red-800 transition flex items-center">
+                                    <i class="fas fa-directions mr-2"></i>
+                                    <span>Get Directions</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Footer will be included via JavaScript -->
+    <div id="footer-container"></div>
+    
+    <!-- JavaScript to include partials -->
+    <script src="../js/include.js"></script>
+    <script>
+        // Load partials
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load header
+            fetch('../partials/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                });
+            
+            // Load footer
+            fetch('../partials/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                });
+                
+            // Simple FAQ toggle functionality
+            const faqButtons = document.querySelectorAll('.faq-item button');
+            faqButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    content.classList.toggle('hidden');
+                    const icon = button.querySelector('i');
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

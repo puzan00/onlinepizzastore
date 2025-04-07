@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Pizza Store</title>
+</head>
+<body>
+    <header class="bg-red-700 text-white shadow-md">
+        <!-- Top bar with contact info -->
+        <div class="hidden md:flex justify-between items-center px-6 py-2 bg-red-800">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    <span>(123) 456-7890</span>
+                </span>
+                <span class="flex items-center">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <span>info@pizzastore.com</span>
+                </span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="https://www.facebook.com" class="hover:text-yellow-300 transition">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" class="hover:text-yellow-300 transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com" class="hover:text-yellow-300 transition">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Main navigation -->
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <a href="index.html" class="text-2xl font-bold flex items-center">
+                    <i class="fas fa-pizza-slice text-yellow-400 mr-2"></i>
+                    <span>Pizza<span class="text-yellow-400">Delight</span></span>
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="block py-2 hover:text-yellow-300 transition">Home</a>
+                <a href="menu.html" class="block py-2 hover:text-yellow-300 transition">Menu</a>
+              
+                <a href="about.html" class="block py-2 hover:text-yellow-300 transition">About</a>
+                <a href="contact.html" class="block py-2 hover:text-yellow-300 transition">Contact</a>
+               
+            </div>
+            
+            <!-- User Actions -->
+            <div class="flex items-center space-x-4">
+                <a href="login.html" class="hidden md:block hover:text-yellow-300 transition">
+                    <i class="fas fa-user mr-1"></i>
+                    <span>Login</span>
+                </a>
+                <a href="register.html" class="hidden md:block hover:text-yellow-300 transition">
+                    <i class="fas fa-user-plus mr-1"></i>
+                    <span>Register</span>
+                </a>
+                <a href="cart.html" class="relative hover:text-yellow-300 transition">
+                    <i class="fas fa-shopping-cart text-xl"></i>
+                    <span class="absolute -top-2 -right-2 bg-yellow-400 text-red-700 rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold">3</span>
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Navigation Menu (hidden by default) -->
+        <div id="mobile-menu" class="md:hidden bg-red-800 hidden">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block py-2 hover:text-yellow-300 transition">Home</a>
+                <a href="menu.html" class="block py-2 hover:text-yellow-300 transition">Menu</a>
+              
+                <a href="about.html" class="block py-2 hover:text-yellow-300 transition">About</a>
+                <a href="contact.html" class="block py-2 hover:text-yellow-300 transition">Contact</a>
+                <a href="login.html" class="block py-2 hover:text-yellow-300 transition">
+                    <i class="fas fa-user mr-1"></i>
+                    <span>Login</span>
+                </a>
+                <a href="register.html" class="block py-2 hover:text-yellow-300 transition">
+                    <i class="fas fa-user-plus mr-1"></i>
+                    <span>Register</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

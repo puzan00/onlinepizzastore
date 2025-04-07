@@ -1,0 +1,37 @@
+/* Custom styles for Pizza Store */
+
+/* Hero section background image */
+.hero-section {
+    background-image: url('../assets/images/pizza-hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Custom animations */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e53e3e;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b91c1c;
+}
+
+/* Additional custom styles can be added here */

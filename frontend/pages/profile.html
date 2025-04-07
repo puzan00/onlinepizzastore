@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>My Profile - PizzaDelight</title>
+</head>
+<body class="bg-gray-50">
+    <!-- Header will be included via JavaScript -->
+    <div id="header-container"></div>
+    
+    <!-- Profile Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold mb-8">My Profile</h1>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Sidebar Navigation -->
+                <div class="w-full lg:w-1/4">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6 bg-red-700 text-white">
+                            <div class="flex items-center">
+                                <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+                                <div>
+                                    <h2 class="text-xl font-bold">John Doe</h2>
+                                    <p class="text-gray-200">john.doe@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <nav class="p-4">
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#account" class="flex items-center px-4 py-2 bg-red-100 text-red-700 rounded-lg font-medium">
+                                        <i class="fas fa-user mr-3"></i>
+                                        <span>Account Information</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#orders" class="flex items-center px-4 py-2 hover:bg-gray-100 rounded-lg transition">
+                                        <i class="fas fa-receipt mr-3"></i>
+                                        <span>Order History</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#addresses" class="flex items-center px-4 py-2 hover:bg-gray-100 rounded-lg transition">
+                                        <i class="fas fa-map-marker-alt mr-3"></i>
+                                        <span>Saved Addresses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#payment" class="flex items-center px-4 py-2 hover:bg-gray-100 rounded-lg transition">
+                                        <i class="fas fa-credit-card mr-3"></i>
+                                        <span>Payment Methods</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#favorites" class="flex items-center px-4 py-2 hover:bg-gray-100 rounded-lg transition">
+                                        <i class="fas fa-heart mr-3"></i>
+                                        <span>Favorite Orders</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#notifications" class="flex items-center px-4 py-2 hover:bg-gray-100 rounded-lg transition">
+                                        <i class="fas fa-bell mr-3"></i>
+                                        <span>Notifications</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center px-4 py-2 text-red-700 hover:bg-gray-100 rounded-lg transition">
+                                        <i class="fas fa-sign-out-alt mr-3"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="w-full lg:w-3/4">
+                    <!-- Account Information -->
+                    <div id="account" class="bg-white rounded-lg shadow-md p-6 mb-8">
+                        <div class="flex justify-between items-center mb-6">
+                            <h2 class="text-xl font-bold">Account Information</h2>
+                            <button class="text-red-700 hover:text-red-800 transition">
+                                <i class="fas fa-edit mr-1"></i>
+                                <span>Edit</span>
+                            </button>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h3 class="text-sm font-medium text-gray-500 mb-1">First Name</h3>
+                                <p>John</p>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-medium text-gray-500 mb-1">Last Name</h3>
+                                <p>Doe</p>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-medium text-gray-500 mb-1">Email Address</h3>
+                                <p>john.doe@example.com</p>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-medium text-gray-500 mb-1">Phone Number</h3>
+                                <p>(123) 456-7890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 pt-6 border-t">
+                            <h3 class="font-bold mb-4">Password</h3>
+                            <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition">
+                                Change Password
+                            </button>
+                        </div>
+                        
+                        <div class="mt-6 pt-6 border-t">
+                            <h3 class="font-bold mb-4">Communication Preferences</h3>
+                            <div class="space-y-3">
+                                <label class="flex items-start">
+                                    <input type="checkbox" class="mt-1 mr-2" checked>
+                                    <div>
+                                        <span class="font-medium">Email Notifications</span>
+                                        <p class="text-sm text-gray-600">Receive order confirmations, delivery updates, and receipts</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start">
+                                    <input type="checkbox" class="mt-1 mr-2" checked>
+                                    <div>
+                                        <span class="font-medium">SMS Notifications</span>
+                                        <p class="text-sm text-gray-600">Receive text messages about your order status</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start">
+                                    <input type="checkbox" class="mt-1 mr-2" checked>
+                                    <div>
+                                        <span class="font-medium">Marketing Communications</span>
+                                        <p class="text-sm text-gray-600">Receive special offers, promotions, and news</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Orders -->
+                    <div id="orders" class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <h2 class="text-xl font-bold">Recent Orders</h2>
+                            <a href="#" class="text-red-700 hover:text-red-800 transition">View All Orders</a>
+                        </div>
+                        
+                        <!-- Order 1 -->
+                        <div class="border rounded-lg mb-4 overflow-hidden">
+                            <div class="bg-gray-50 p-4 flex flex-col md:flex-row justify-between">
+                                <div>
+                                    <div class="flex items-center mb-2">
+                                        <span class="font-bold mr-2">Order #12345</span>
+                                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Delivered</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600">June 15, 2023 at 7:30 PM</p>
+                                </div>
+                                <div class="mt-3 md:mt-0">
+                                    <button class="bg-red-700 text-white px-4 py-2 rounded-lg text-sm hover:bg-red-800 transition">
+                                        Reorder
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p-4 border-t">
+                                <div class="flex justify-between mb-2">
+                                    <span>1 x Pepperoni Supreme (Large)</span>
+                                    <span>$14.99</span>
+                                </div>
+                                <div class="flex justify-between mb-2">
+                                    <span>1 x Buffalo Wings (10 pc)</span>
+                                    <span>$8.99</span>
+                                </div>
+                                <div class="flex justify-between mb-2">
+                                    <span>1 x Soda (Large)</span>
+                                    <span>$2.49</span>
+                                </div>
+                                <div class="flex justify-between font-bold mt-3 pt-3 border-t">
+                                    <span>Total</span>
+                                    <span>$26.47</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Order 2 -->
+                        <div class="border rounded-lg mb-4 overflow-hidden">
+                            <div class="bg-gray-50 p-4 flex flex-col md:flex-row justify-between">
+                                <div>
+                                    <div class="flex items-center mb-2">
+                                        <span class="font-bold mr-2">Order #12344</span>
+                                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Delivered</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600">June 8, 2023 at 6:45 PM</p>
+                                </div>
+                                <div class="mt-3 md:mt-0">
+                                    <button class="bg-red-700 text-white px-4 py-2 rounded-lg text-sm hover:bg-red-800 transition">
+                                        Reorder
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p-4 border-t">
+                                <div class="flex justify-between mb-2">
+                                    <span>1 x Veggie Delight (Medium)</span>
+                                    <span>$12.99</span>
+                                </div>
+                                <div class="flex justify-between mb-2">
+                                    <span>1 x Garlic Breadsticks</span>
+                                    <span>$5.99</span>
+                                </div>
+                                <div class="flex justify-between font-bold mt-3 pt-3 border-t">
+                                    <span>Total</span>
+                                    <span>$18.98</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer will be included via JavaScript -->
+    <div id="footer-container"></div>
+    
+    <!-- JavaScript to include partials -->
+    <script src="../js/include.js"></script>
+    <script>
+        // Load partials
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load header
+            fetch('../partials/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                });
+            
+            // Load footer
+            fetch('../partials/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>
